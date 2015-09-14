@@ -15,7 +15,11 @@ module.exports = function(cmd, regex) {
             var matches;
             if (matches = data.match(regex)) {
               debug('Matched!', data);
-              resolve(proc, matches);
+              resolve({
+                process: proc,
+                matches: matches,
+                line: data
+              });
             } else {
               verbose('Did not match', data);
             }
