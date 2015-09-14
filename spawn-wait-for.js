@@ -1,5 +1,6 @@
 var debug = require('debug')('spawn-wait-for');
 var ezspawn = require('ezspawn');
+var bluebird = require('bluebird');
 
 module.exports = function(cmd, regex) {
   debug('launching ' + cmd + ' and waiting for output that matches ' + regex);
