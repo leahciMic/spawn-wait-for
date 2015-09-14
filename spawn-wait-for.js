@@ -1,4 +1,6 @@
-var debug = require('debug')('spawn-wait-for');
+var debug = require('debug')('spawn-wait-for:debug');
+var verbose = require('debug')('spawn-wait-for:verbose');
+
 var ezspawn = require('ezspawn');
 var bluebird = require('bluebird');
 var split = require('split');
@@ -14,6 +16,8 @@ module.exports = function(cmd, regex) {
             if (matches = data.match(regex)) {
               debug('Matched!', data);
               resolve(proc, matches);
+            } else {
+              verbose('Did not match', data);
             }
           });
       });
