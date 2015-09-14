@@ -1,0 +1,19 @@
+# spawn-wait-for
+
+Spawn and wait for the process to output a line that matches a regex.
+
+## Install
+
+```sh
+npm install --save spawn-wait-for
+```
+
+## Usage
+
+```js
+var spawnWaitFor = require('spawn-wait-for');
+
+spawnWaitFor('fakeServer', /server is running/).then(function(proc) {
+
+});
+```

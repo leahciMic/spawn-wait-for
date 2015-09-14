@@ -1,0 +1,26 @@
+{
+  "name": "spawn-wait-for",
+  "version": "1.0.0",
+  "description": "Spawn and wait for the process to output a line that matches a regex.",
+  "main": "spawn-wait-for.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leahciMic/spawn-wait-for.git"
+  },
+  "keywords": [
+    "spawn",
+    "exec",
+    "child_process",
+    "wait",
+    "regex"
+  ],
+  "author": "Michael Leaney <leahcimic@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leahciMic/spawn-wait-for/issues"
+  },
+  "homepage": "https://github.com/leahciMic/spawn-wait-for#readme"
+}
