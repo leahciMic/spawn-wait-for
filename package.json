@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/leahciMic/spawn-wait-for#readme",
   "dependencies": {
-    "bluebird": "^2.10.0"
+    "bluebird": "^2.10.0",
+    "split": "^1.0.0"
   }
 }
