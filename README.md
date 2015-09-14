@@ -20,6 +20,4 @@ spawnWaitFor('fakeServer', /server is running/).then(function(obj) {
     line: String // the line that matched
   };
 });
-
-});
 ```
