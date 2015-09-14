@@ -25,6 +25,14 @@
   "homepage": "https://github.com/leahciMic/spawn-wait-for#readme",
   "dependencies": {
     "bluebird": "^2.10.0",
+    "debug": "^2.2.0",
+    "ezspawn": "^1.0.2",
     "split": "^1.0.0"
+  },
+  "devDependencies": {
+    "jasmine": "^2.3.2",
+    "proxyquire": "^1.7.2",
+    "resumer": "0.0.0",
+    "lodash.defer": "^3.1.0"
   }
 }
