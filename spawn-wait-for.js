@@ -8,9 +8,10 @@ module.exports = function(cmd, regex) {
       return new bluebird.Promise(function(resolve, reject) {
         proc.stdout.pipe(split())
           .on('data', function(data) {
-            if (data.match(regex)) {
+            var matches;
+            if (matches = data.match(regex)) {
               debug('Matched!', data);
-              resolve(proc);
+              resolve(proc, matches);
             }
           });
       });
