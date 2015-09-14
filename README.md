@@ -1,4 +1,4 @@
-# spawn-wait-for
+# spawn-wait-for [![Build Status](https://travis-ci.org/leahciMic/spawn-wait-for.svg?branch=master)](https://travis-ci.org/leahciMic/spawn-wait-for)
 
 Spawn and wait for the process to output a line that matches a regex.
 
