@@ -1,6 +1,5 @@
 var debug = require('debug')('spawn-wait-for:debug');
 var verbose = require('debug')('spawn-wait-for:verbose');
-
 var ezspawn = require('ezspawn');
 var bluebird = require('bluebird');
 var split = require('split');
