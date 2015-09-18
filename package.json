@@ -1,6 +1,6 @@
 {
   "name": "spawn-wait-for",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Spawn and wait for the process to output a line that matches a regex.",
   "main": "spawn-wait-for.js",
   "scripts": {
