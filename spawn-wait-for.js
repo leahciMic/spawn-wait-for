@@ -9,11 +9,17 @@ module.exports = function(cmd, regex) {
   return ezspawn(cmd, false)
     .then(function(proc) {
       return new bluebird.Promise(function(resolve, reject) {
+        proc.on('exit', function() {
+          debug('process exited, unpiping stdout');
+          proc.stdout.unpipe();
+        });
+
         proc.stdout.pipe(split())
           .on('data', function(data) {
             var matches;
             if (matches = data.match(regex)) {
               debug('Matched!', data);
+              debug('matched, unpiping stdout');
               proc.stdout.unpipe();
 
               resolve({
