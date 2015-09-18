@@ -8,7 +8,7 @@ module.exports = function(cmd) {
   var stderr = resumer();
   debug('launching command', cmd);
   stdout.queue('This is fake output\nServer has started\nFoobar');
-
+  stdout.unpipe = jasmine.createSpy('unpipe');
   var proc = {
     stdout: stdout
   };

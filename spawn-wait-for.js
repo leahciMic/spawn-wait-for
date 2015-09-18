@@ -14,6 +14,8 @@ module.exports = function(cmd, regex) {
             var matches;
             if (matches = data.match(regex)) {
               debug('Matched!', data);
+              proc.stdout.unpipe();
+
               resolve({
                 process: proc,
                 matches: matches,
