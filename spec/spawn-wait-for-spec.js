@@ -13,6 +13,6 @@ describe('spawn-wait-for', function() {
       expect(result.matches[0]).toEqual('Server has started');
       expect(result.matches[1]).toEqual('has');
       done();
-    })
+    });
   });
 });
