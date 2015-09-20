@@ -26,7 +26,7 @@
   "dependencies": {
     "bluebird": "^2.10.0",
     "debug": "^2.2.0",
-    "ezspawn": "^1.0.2",
+    "ezspawn": "^1.1.0",
     "split": "^1.0.0"
   },
   "devDependencies": {
